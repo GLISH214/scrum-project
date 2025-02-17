@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Auth System</h1>
+        <div id="user-info" class="hidden">
+            <img id="user-photo" class="user-img" alt="User Avatar">
+            <p id="user-name"></p>
+            <p id="user-email"></p>
+            <button onclick="logout()">Sign Out</button>
+        </div>
+        <button id="login-btn" onclick="signInWithGoogle()">Sign In with Google</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
